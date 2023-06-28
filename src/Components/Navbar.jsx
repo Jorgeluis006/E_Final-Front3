@@ -17,23 +17,23 @@ return(
         <li className="nav-item">
           <Link className="nav-link" to={"/"}>Home♛</Link>
         </li>
+
+       
+
         <li className="nav-item">
           <Link className="nav-link " to={"/form"}>Login✉</Link>
         </li>
-       
-        <li className="nav-item">
-          <Link className="nav-link " to={"/favs"}>Favs</Link>
-        </li>
         
+     
+       
+      
         <li className="nav-item">
           <Link className="nav-link " to={"/card"}>Card</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link " to={"/ToggleButton"}>Modos</Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link " to={"/dentist"}>Detalles</Link>
-        </li>
+       
       
         
        

@@ -1,21 +1,26 @@
-import React from "react";
-import styles from "./Card.module.css";
+import React, {useEffect, useState} from "react";
+import  "./Card.module.css";
 import { Link } from 'react-router-dom';
+import Favs from "../Routes/Favs";
 
 const Card = ({ name, username, id }) => {
- 
+
+
+
+  
 
   const addFav = ()=>{
-    // Aqui iria la logica para agregar la Card en el localStorage
+   
     
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
       favorites.push({ name, username, id });
-      localStorage.setItem("favorites", JSON.stringify(favorites));
+      localStorage.setItem("favorites", JSON.stringify(Favs));
     }
 
   return (
 
     <>
+    
     <div className={`card`}>
 <Link  className="card" to={'https://jsonplaceholder.typicode.com/users/'} >
 <img className="card-odonto" src="/img/doctor.jpg" alt="doctor placeholder"/>
