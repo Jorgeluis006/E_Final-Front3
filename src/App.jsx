@@ -25,21 +25,14 @@ function App() {
     <Navbar/>
     
     <Routes>
-    
-    
+  
         <Route exact path="/"Component={Home} />
-        
-       
         <Route path="/contact" element={<Contact/>}/>
-        
         <Route path="/form" element={<Form />} />
         <Route path="/card" element={<Card/>}/>
         <Route path="/Outlet" element={<Outlet/>}/>
-        
         <Route path="/ToggleButton" element={<ToggleButton/>}/>
-        
-       
-        
+      
         </Routes>
        
         <Footer/>
